@@ -2,7 +2,6 @@ package streams.ex1;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 // find three high calories dish names
 public class MainJava8_3 {
