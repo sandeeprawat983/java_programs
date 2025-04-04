@@ -2,7 +2,6 @@ package streams.ex1;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 // find three high calories dish names
 public class MainJava8_3 {
@@ -26,7 +25,7 @@ public class MainJava8_3 {
 				.filter(dish -> dish.getCalories() > 300) // create a pipeline of operations: first filter high calories dishes
 				.map(Dish::getName) // gets the names of the dishes
 				.limit(3) // selects only the first three
-				.collect(Collectors.toList()); // stores the results in another list
+				.toList(); // stores the results in another list
 		
 		System.out.println(threeHighCaloricDishMenus);
 	}
