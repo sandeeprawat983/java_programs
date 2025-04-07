@@ -8,6 +8,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 // Use DataInputStream and DataOutputStream for reading/writing Java primitive data types.
+// 🧵 2. Data Streams
 public class DataOutputStreamEx {
 	
 	public static void main(String[] args) {
