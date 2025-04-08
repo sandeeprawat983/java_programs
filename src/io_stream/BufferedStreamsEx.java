@@ -13,7 +13,7 @@ public class BufferedStreamsEx {
             while ((data = bis.read()) != -1) {
                 bos.write(data);
             }
-            System.out.println("done");
+            System.out.println("done with successfully!");
         } catch (IOException e) {
             e.printStackTrace();
         }
