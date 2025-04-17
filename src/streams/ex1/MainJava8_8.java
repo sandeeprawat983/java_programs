@@ -28,6 +28,15 @@ public class MainJava8_8 {
 					.collect(Collectors.toList());
 		
 		System.out.println(dishes);
+
+		// filter the first two meat dishes
+		List<Dish> dishes2 =
+				menu.stream()
+						.filter(dish -> dish.getType() == Type.MEAT)
+						.limit(2)
+						.collect(Collectors.toList());
+
+		System.out.println(dishes2);
 	}
 
 }
