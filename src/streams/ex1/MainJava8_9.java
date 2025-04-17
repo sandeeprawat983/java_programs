@@ -56,12 +56,11 @@ public class MainJava8_9 {
 					.collect(Collectors.toList());
 
 		System.out.println(dishNameLengths);
-	}
 
         // Flattening streams
-        List<String> words = Arrays.asList("Hello", "World");
+        List<String> words2 = Arrays.asList("Hello", "World");
         List<String> uniqueCharacters =
-                words.stream()
+                words2.stream()
                         .map(word -> word.split(""))
                         .flatMap(Arrays::stream)
                         .distinct()
